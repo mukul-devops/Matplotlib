@@ -51,7 +51,7 @@ ax.set_title(
     "Monthly Sales",
     fontsize=18,
     fontweight="bold",
-    fontfamily='sans-serif',
+    fontfamily='serif',
     pad=10
 )
 
