@@ -26,15 +26,22 @@ companies = ["Samsung", "Apple", "Xiaomi", "Others"]
 
 # Colors
 colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728"]
-plt.figure(figsize=(7,7))
+plt.figure(figsize=(7,7) ,dpi=120, facecolor="#F8F9FA", edgecolor="black", linewidth=2)
 
 plt.pie(sales, 
         labels=companies, 
+        labeldistance=1.2,
         autopct="%1.1f%%", 
         startangle=90, 
         colors=colors, 
-        wedgeprops={"width":0.3, "edgecolor":'w', "linewidth":2}, 
-        pctdistance=0.85
+        wedgeprops={"width":0.4, "edgecolor":'w', "linewidth":2}, 
+        pctdistance=0.80,
+        textprops={                                               # Text customization
+                'fontsize': 14,
+                'color': 'k',
+                'fontweight': 'bold',
+                'fontfamily': 'serif'                    
+                }
         )
 
 
@@ -42,5 +49,5 @@ plt.pie(sales,
 # Add text in the center
 plt.text(0, 0, "Total\n100%", ha="center", va="center", fontsize=14, fontweight="bold", color='c')
 
-plt.title("Global Smartphone Market Share (Donut Chart)", fontsize=16, fontweight="bold", color="maroon")
+plt.title("Global Smartphone Market Share (Donut Chart)", fontsize=18,fontfamily='serif', fontweight="bold", color="maroon", pad=20)
 plt.show()
