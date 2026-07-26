@@ -114,6 +114,15 @@
         #When ax is flatten use this to delete 4th plot 
         fig.delaxes(ax[3])      
 
+9. Rotate Ticks
+    Very common.
+
+        ax.tick_params(
+            axis="x",
+            rotation=45
+        )
+
+    Useful when category names are long.
 
 
     
