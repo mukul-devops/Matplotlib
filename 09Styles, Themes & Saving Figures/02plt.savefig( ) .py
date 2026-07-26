@@ -50,11 +50,22 @@ ax.plot(
 ax.set_title(
     "Monthly Sales",
     fontsize=18,
-    fontweight="bold"
+    fontweight="bold",
+    fontfamily='sans-serif',
+    pad=10
 )
 
-ax.set_xlabel("Month")
-ax.set_ylabel("Revenue")
+ax.set_xlabel("Month",
+              fontsize=14,
+              fontweight="bold",
+              color="#333333",
+              fontfamily="sans-serif")
+
+ax.set_ylabel("Revenue",
+              fontsize=14,
+              fontweight="bold",
+              color="#333333",
+              fontfamily="sans-serif")
 
 ax.grid(alpha=0.3)
 

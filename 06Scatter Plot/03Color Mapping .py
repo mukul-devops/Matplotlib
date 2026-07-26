@@ -31,6 +31,14 @@ hours = [2,3,4,5,6]
 marks = [55,60,68,75,85]
 attendance = [60,70,75,90,95]
 
+plt.figure(
+    figsize=(10, 6),        
+    dpi=150,                
+    facecolor="#F8F9FA",    
+    edgecolor="black",        
+    linewidth=2               
+)
+
 plt.scatter(
     hours,
     marks,
@@ -46,8 +54,24 @@ plt.colorbar(label="Attendance")   #adds a legend showing the color scale.
 #         Color → Attendance
 #         Size → Fixed
 
-plt.title("Study Hours vs Marks")
-plt.xlabel("Study Hours")
-plt.ylabel("Marks")
+plt.title("Study Hours vs Marks",
+           fontsize=16,
+           fontweight="bold",
+           color="#1F4E79",
+           pad=10,
+           fontfamily="serif",
+           loc="center")
+
+plt.xlabel("Study Hours",
+           fontsize=14,
+           fontweight="bold",
+           color="#333333",
+           fontfamily="sans-serif")
+
+plt.ylabel("Marks",
+            fontsize=14,
+            fontweight="bold",
+            color="#333333",
+            fontfamily="sans-serif")
 
 plt.show()
