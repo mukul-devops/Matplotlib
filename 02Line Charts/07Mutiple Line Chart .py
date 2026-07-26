@@ -36,12 +36,13 @@ plt.plot(
 )
 
 plt.title("Monthly Mobile Sales",
-          fontsize=16,
+          fontfamily='monospace',
+          fontsize=18,
           color="purple",
           fontweight="bold")
 
-plt.xlabel("Month-->",fontsize='14', color='c',fontweight='bold')
-plt.ylabel("Units Sold-->",fontsize='14', color='c',fontweight='bold')
+plt.xlabel("Months-->",fontsize='14', color='c',fontweight='bold')
+plt.ylabel("Units Sold (in K)-->",fontsize='14', color='c',fontweight='bold')
 
 plt.grid( color="gray",
           linestyle="--",
