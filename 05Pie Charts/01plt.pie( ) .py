@@ -62,21 +62,29 @@ products = ["Smartphones", "Laptops", "Tablets", "Accessories"]
 colors = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728"]
 explode = [0.1, 0, 0, 0]   # Emphasize first slice
 
-plt.figure(figsize=(7,7), dpi=120, facecolor="white")
+plt.figure(figsize=(7,7), dpi=120, facecolor="#F8F9FA", edgecolor="black", linewidth=2)
 
 # Pie chart
 # plt.pie(sales)  #This creates a pie chart but without labels, making it difficult to understand.
 plt.pie(sales,
         labels=products, 
+        labeldistance=1.2 ,
         autopct="%1.1f%%", 
         colors=colors, 
         explode=explode, 
         counterclock=False, 
         startangle=180 , 
-        shadow=True
+        shadow=True,
+        wedgeprops={"width":1, "edgecolor":'w', "linewidth":2},   # Slices customization
+        textprops={                                               # Text customization
+                   'fontsize': 14,
+                   'color': 'k',
+                   'fontweight': 'bold',
+                   'fontfamily': 'serif'                    
+                  }
         )
 
-plt.title("Company Product Sales Distribution", fontsize=16, fontweight="bold", color="maroon")
+plt.title("Company Product Sales Distribution", fontsize=16,fontfamily='serif', fontweight="bold", color="maroon", pad=20)
 plt.show()
 
 
