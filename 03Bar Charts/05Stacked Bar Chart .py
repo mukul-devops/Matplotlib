@@ -15,7 +15,7 @@ offline = [20,25,30,20]
 
 plt.bar(months, online, label="Online")
 
-plt.bar(months,offline, label="Offline",bottom=online)
+plt.bar(months, offline, label="Offline",bottom=online)
 #bottom=online
 #The second bars start where the first bars end.
 

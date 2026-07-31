@@ -69,7 +69,7 @@ plt.hist(marks,
          alpha=0.6,
          linewidth=1.5,
          label='Exam Scores',
-         
+        #  rwidth=0.7
          )
 
 
