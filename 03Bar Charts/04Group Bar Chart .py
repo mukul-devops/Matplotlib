@@ -26,12 +26,12 @@ x becomes: [0,1,2,3]
 width = 0.35
 
 plt.bar( x - width/2, A,
-        width,
+        width=width,
         label="Product A")
 
 
 plt.bar( x + width/2, B,
-        width,
+        width=width,
         label="Product B")
     
    
